@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost:9001/db
+    driverClassName: org.hsqldb.jdbcDriver
+    username: sa
+  jpa:
+    show-sql: true
+    open-in-view: false
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          filter:
+            CommonsRequestLoggingFilter: DEBUG
+sandbox:
+  enabled: false
+  apiKey: sandbox-n1OT2mFN2V0dIBw9DJMCeNxyyY1kv6Cl
+  secretKey: sandbox-3XDRntTfd4EmpKuESQK0CC79iywpu79N
